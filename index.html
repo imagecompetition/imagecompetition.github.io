@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ImageCompitition</title>
+    <title>ImageCompetition</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -55,6 +55,26 @@
       </div>
     </header> -->
 
+      <!-- navbar-->
+    <header class="header">
+      <div role="navigation" class="navbar navbar-default">
+        <div class="container">
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a href="#carousel-home" class="nav-link link-scroll">Title</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll">Description</a></li>
+              <li class="nav-item"><a href="#dataset" class="nav-link link-scroll">Dataset</a></li>
+              <li class="nav-item"><a href="#rules" class="nav-link link-scroll">Rules</a></li>
+              <li class="nav-item"><a href="#deadline" class="nav-link link-scroll">Deadline</a></li>
+              <li class="nav-item"><a href="#guidelines" class="nav-link link-scroll">Guidelines</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <div id="carousel-home" data-ride="carousel" class="carousel slide carousel-fullscreen carousel-fade">
       <!-- Indicators-->
       <ol class="carousel-indicators">
@@ -64,7 +84,7 @@
       </ol>
       <!-- Wrapper for slides-->
       <div role="listbox" class="carousel-inner">
-        <div style="background-image: url('img/carousel3.jpg');" class="item active">
+        <div style="background-image: url('img/carousel1.jpg');" class="item active">
           <div class="overlay"></div>
           <div class="carousel-caption">
             <h1 class="super-heading">QA4Camera</h1>
@@ -78,7 +98,7 @@
             <p class="super-paragraph">Quality assessment for Smartphone Cameras</p>
           </div>
         </div>
-        <div style="background-image: url('img/carousel1.jpg');" class="item">
+        <div style="background-image: url('img/carousel3.jpg');" class="item">
           <div class="overlay"></div>
           <div class="carousel-caption">
             <h1 class="super-heading">QA4Camera</h1>
@@ -88,10 +108,10 @@
       </div>
     </div>
 
-    <section class="background-gray-lightest negative-margin">
+    <section id="about";class="background-gray-lightest negative-margin">
       <div class="container">
         <h1> Challenge Description</h1>
-        <div style="text-align:justify;font-size: 120%;text-indent: 2em;">  <p> Smartphone has been one of the most popular digital devices in the past decades, with more than 300 million smartphones sold every quarter in the world wide. Most of the smartphone vendors, such as Apple, Huawei, Samsung, launch their new flagship smartphones every year. People use smartphone cameras to shoot selfie photos, film scenery or events, and record videos of family and friends. The specifications of smartphone camera and the quality of taken pictures are major criteria for consumer to select and buy smartphones. Many smartphone manufacturers also introduce and advertise their smartphones by introducing the strengths and advantages of their smartphone cameras. However, how to evaluate the quality of smartphone cameras and the taken pictures remains a problem for both smartphone manufacturers and confumers. Currently in the market, there are several teams and companies who evaluate the quality of smartphone cameras and announce the ranking and scores of the quality of smartphone cameras, and the scores of smartphone cameras are subjectively graded by several photographers and experts from different aspects, such as exposure, color, noise and texture. However, subjective assessment is not easy to reproduce, and it is not easy to deploy in practical image processing systems. </p>
+        <div style="text-align:justify;font-size: 130%;text-indent: 2em;">  <p> Smartphone has been one of the most popular digital devices in the past decades, with more than 300 million smartphones sold every quarter in the world wide. Most of the smartphone vendors, such as Apple, Huawei, Samsung, launch their new flagship smartphones every year. People use smartphone cameras to shoot selfie photos, film scenery or events, and record videos of family and friends. The specifications of smartphone camera and the quality of taken pictures are major criteria for consumer to select and buy smartphones. Many smartphone manufacturers also introduce and advertise their smartphones by introducing the strengths and advantages of their smartphone cameras. However, how to evaluate the quality of smartphone cameras and the taken pictures remains a problem for both smartphone manufacturers and confumers. Currently in the market, there are several teams and companies who evaluate the quality of smartphone cameras and announce the ranking and scores of the quality of smartphone cameras, and the scores of smartphone cameras are subjectively graded by several photographers and experts from different aspects, such as exposure, color, noise and texture. However, subjective assessment is not easy to reproduce, and it is not easy to deploy in practical image processing systems. </p>
           <p>    In the last two decades, objective image quality assessment (IQA) has been widely researched, and a large amount of objective IQA algorithms have been designed to automatically and accurately estimate the quality of images. However, most of objective IQA methods are designed to assess the overall perceived quality of the image degraded by various simulated distortions, which rarely exist in pictures taken by the modern smartphone cameras. Thus these methods are not suitable for the task of smartphone camera quality assessment, while objective evaluation methods specifically designed for the purpose of smartphone camera quality assessment are relatively rare.</p>
           <p>  The purpose of this Grand Challenge is to drive efforts of image quality assessment towards smartphone camera quality assessment. With this Grand challenge, it is expected to develop objective smartphone camera quality assessment models from four different aspects, including exposure, color, noise and texture, by using the datasets released by the organizers. The goal is to provide reference quality rankings or scores for smartphone cameras and to both smartphone manufacturers and consumers.</p>
           <p>     Participants are asked to submit four computational models to cacluate the rankings of smartphone camera from four aspects: exposure, color, noise and texture. </p></div>
@@ -99,10 +119,10 @@
       </div>
     </section>
 
-    <section class="background-gray-lightest negative-margin">
+    <section id = "dataset" class="background-gray-lightest negative-margin">
       <div class="container">
         <h1> Dataset/APIs/Library URL</h1>
-        <div style="text-align:justify;font-size: 120%;text-indent: 2em;"><p>   All data and tools are on a repository accessible through FTP site.</p>
+        <div style="text-align:justify;font-size: 130%;text-indent: 2em;"><p>   All data and tools are on a repository accessible through FTP site.</p>
           <p>   A training dataset will be available. It is composed of 1500 pictures taken from 100 scenes using 15 smartphones. The 15 smartphones cover a wide price range. The dataset includes various challenge scenes, e.g. high dynamic scenes, backlight scenes, night scenes, colorful scenes, portraits and distant scenes. For the 15 pictures of the same scene, four rankings of the quality of 15 smartphone cameras in four aspects: exposure, color, noise and texture will be provided. The 15 smartphones, are named and provided as Device A, Device B, and so on, and the realitic details of these smartphones will not be provided.</p>
           <p>  Please do not hesitate to contact us via email: zhuwenhan823@sjtu.edu.cn if you have queries about the dataset.</p>
         </div>
@@ -110,10 +130,10 @@
       </div>
     </section>
 
-    <section class="background-gray-lightest negative-margin">
+    <section id = "rules" class="background-gray-lightest negative-margin">
       <div class="container">
         <h1> Evaluation Criteria</h1>
-        <div style="text-align:justify;font-size: 120%;text-indent: 2em;"><p>The participants are free to use the training dataset for training and tuning their algorithms as necessary and may also compute the benchmark rankings as a reference for themselves. When the participants have decided to go ahead with the algorithm submission, they need to submit the code to the organizers for the performance evaluation of their algorithms.</p>
+        <div style="text-align:justify;font-size: 130%;text-indent: 2em;"><p>The participants are free to use the training dataset for training and tuning their algorithms as necessary and may also compute the benchmark rankings as a reference for themselves. When the participants have decided to go ahead with the algorithm submission, they need to submit the code to the organizers for the performance evaluation of their algorithms.</p>
           <p> Release of the evaluation dataset (content only): the proponent then submit the outputs of his/her model in expected format (When 15 smartphone camera images in one scene are entered, four rankings of them are output).</p>
           <p>   The output of model on the evaluation dataset must be submitted online before the mentioned date.</p>
           <p>  Organizers will compute the performance of the submitted model and release them to the proponent such that the proponent can report the results in publications and presentations. </p>
@@ -123,10 +143,10 @@
       </div>
     </section>
     
-    <section class="background-gray-lightest negative-margin">
+    <section id="deadline"  class="background-gray-lightest negative-margin">
       <div class="container">
         <h1> Important dates Deadline of Submission</h1>
-        <div style="text-align:justify;font-size: 120%;">
+        <div style="text-align:justify;font-size: 130%;">
         <ul>
           <li> Paper submission Deadline (for interested participants): March 13th 2020</li>
           <li>Model submission Deadline: March 13th 2020  </li>
@@ -141,10 +161,10 @@
     </section>
     
 
-    <section class="background-gray-lightest negative-margin">
+    <section id = "guidelines"  class="background-gray-lightest negative-margin">
       <div class="container">
         <h1> Submission Guidelines</h1>
-        <div class="lead margin-bottom--medium"><p>By March 13, 2020, we ask all participants to submit paper and test result (i.e. completed images).</p>
+        <div style="text-align:justify;font-size: 130%;text-indent: 2em;"><p>By March 13, 2020, we ask all participants to submit paper and test result (i.e. completed images).</p>
           <p> By March 14, 2020, we ask all participants to submit their (testing) code and model, which serves for verification purpose.</p>
           <p>   Results and codes are submitted via email to zhuwenhan823@sjtu.edu.cn.</p>
         </div>
@@ -157,7 +177,8 @@
     <section class="background-gray-lightest negative-margin">
         <div class="container">
           <h1> Host Organization</h1>
-          <div class="lead margin-bottom--medium">
+          <!-- <div class="lead margin-bottom--medium"> -->
+          <div style="text-align:justify;font-size: 130%;text-indent: 2em;">
             <p>Shanghai Jiao Tong University (SJTU, China)</p>
     
           </div>
@@ -216,7 +237,7 @@
     </section>
     <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div> -->
     <!--   *** SERVICES ***-->
-    <section class="background-gray-lightest">
+    <section id = "contact" class="background-gray-lightest">
       <div class="container clearfix">
         <div class="row services">
           <div class="col-md-12">
@@ -227,24 +248,30 @@
               <div class="col-sm-4">
                   <div class="box box-services">
                     <div class="icon"><i class="pe-7s-id"></i></div>
-                    <h4 class="services-heading">Guangtao Zhai</h4>
+                    <h3 class="services-heading">Guangtao Zhai</h3>
+                    <p>Professor</p>
                     <p>zhaiguangtao@sjtu.edu.cn</p>
+           
                   </div>
                 </div>
               <div class="col-sm-4">
                 <div class="box box-services">
                   <div class="icon"><i class="pe-7s-id"></i></div>
-                  <h4 class="services-heading">Wenhan Zhu</h4>
+                  <h3 class="services-heading">Wenhan Zhu</h3>
                   <!-- <p><a href="zhuwenhan823@sjtu.edu.cn" target="_blank"> zhuwenhan823@sjtu.edu.cn</a></p> -->
+                  <p>PHD student</p>
                   <p> zhuwenhan823@sjtu.edu.cn</p>
+             
                 </div>
               </div>
         
               <div class="col-sm-4">
                 <div class="box box-services">
                   <div class="icon"><i class="pe-7s-id"></i></div>
-                  <h4 class="services-heading">Zongxi Han</h4>
+                  <h3 class="services-heading">Zongxi Han</h3>
+                  <p>PHD student</p>
                   <p>zongxihan@sjtu.edu.cn</p>
+                
                 </div>
               </div>
             </div>
@@ -252,22 +279,28 @@
               <div class="col-sm-4">
                 <div class="box box-services">
                   <div class="icon"><i class="pe-7s-id"></i></div>
-                  <h4 class="services-heading">Xiongkuo Min</h4>
+                  <h3 class="services-heading">Xiongkuo Min</h3>
+                  <p>PHD student</p>
                   <p>minxiongkuo@sjtu.edu.cn</p>
+               
                 </div>
               </div>
               <div class="col-sm-4">
                 <div class="box box-services">
                   <div class="icon"><i class="pe-7s-id"></i></div>
-                  <h4 class="services-heading">Tao Wang</h4>
+                  <h3 class="services-heading">Tao Wang</h3>
+                  <p>undergraduate</p>
                   <p>f1603011.wangtao@sjtu.edu.cn</p>
+           
                 </div>
               </div>
               <div class="col-sm-4">
                 <div class="box box-services">
                   <div class="icon"><i class="pe-7s-id"></i></div>
-                  <h4 class="services-heading">Zicheng Zhang</h4>
+                  <h3 class="services-heading">Zicheng Zhang</h3>
+                  <p>undergraduate</p>
                   <p>zzc1998@sjtu.edu.cn </p>
+         
                 </div>
               </div>
             </div>
@@ -275,8 +308,10 @@
               <div class="col-sm-4">
                 <div class="box box-services">
                   <div class="icon"><i class="pe-7s-id"></i></div>
-                  <h4 class="services-heading">Wei Lu</h4>
-                  <p>JTU-Luwei@sjtu.edu.cn</p>
+                  <h3 class="services-heading">Wei Lu</h3>
+                  <p>undergraduate</p>
+                  <p>SJTU-Luwei@sjtu.edu.cn</p>
+                  
                 </div>
               </div>
             </div>
